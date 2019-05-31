@@ -1,0 +1,33 @@
+{
+  "name": "cantina-app",
+  "version": "1.0.0",
+  "description": "web-exam",
+  "main": "app.js",
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.16.5",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-cli": "^3.1.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  },
+  "scripts": {
+    "test": "echo \"error: no test specified\" && exit 1",
+    "dev": "webpack --mode development && npm run start",
+    "cors": "webpack --mode development && CORS=true node src/server/AppServer.js",
+    "build": "webpack --mode production",
+    "start": "node src/server/AppServer.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
